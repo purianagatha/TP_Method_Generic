@@ -1,10 +1,18 @@
-﻿namespace tpmod5_1302223019
+﻿public class HaloGeneric
 {
-    internal class Program
+    public void SapaUser<T>(T X)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        Console.WriteLine("Halo user " + X);
+    }
+}
+
+public class main
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Input nama: ");
+        String X = Console.ReadLine();
+        HaloGeneric halo = new HaloGeneric();
+        halo.SapaUser(X);
     }
 }
