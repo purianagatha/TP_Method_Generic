@@ -6,9 +6,6 @@
     }
 }
 
-<<<<<<< HEAD
-=======
-
 public class DataGeneric<T>
 {
     private T data;
