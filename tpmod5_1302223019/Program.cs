@@ -6,6 +6,26 @@
     }
 }
 
+<<<<<<< HEAD
+=======
+
+public class DataGeneric<T>
+{
+    private T data;
+
+    public DataGeneric(T data)
+    {
+        this.data = data;
+    }
+
+    public void PrintData()
+    {
+        Console.WriteLine("Data yang tersimpan adalah: " + this.data);
+    }
+}
+
+
+>>>>>>> generic-class
 public class main
 {
     public static void Main(string[] args)
@@ -14,5 +34,12 @@ public class main
         String X = Console.ReadLine();
         HaloGeneric halo = new HaloGeneric();
         halo.SapaUser(X);
+<<<<<<< HEAD
+=======
+
+        DataGeneric<int> data = new DataGeneric<int>(1302223019);
+        data.PrintData();
+
+>>>>>>> generic-class
     }
 }
